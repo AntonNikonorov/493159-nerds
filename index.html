@@ -3,10 +3,179 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+    <header class="main-header">
+
+      <a class="main-header-logo">
+        <img src="img/main-logo.svg" width="200" height="50" alt="Логотип студии Нёрдс">
+      </a>
+
+      <nav class="main-navigation">
+        <ul class="site-navigation">
+          <li><a href="studio.html">Студия</a></li>
+          <li><a href="clients.html">Клиенты</a></li>
+          <li><a href="store.html">Магазин</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+
+         <ul class="user-navigation">
+           <li class="basket-link"><a href="basket.html">Корзина</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <main class="container">
+
+      <h1 class="visually-hidden">Дизайн-студия "Нёрдс"</h1>
+
+      <section class="keystones">
+        <h2 class="visually-hidden">Наши принципы</h2>
+        <div class="slider">
+          <input type="radio" id="btn-1" name="keystone-toggle" checked>
+          <input type="radio" id="btn-2" name="keystone-toggle">
+          <input type="radio" id="btn-3" name="keystone-toggle">
+          <div class="slider-controls">
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
+          </div>
+          <div class="slider-inner">
+            <ul class="keystones-list">
+              <li class="keystone-item">
+                <p><b>Долго, дорого,  скрупулезно.</b></p>
+                <p>Математически выверенный дизайн  для вашего сайта или мобильного приложения.</p>
+                <a class="button" href="studio.html">Узнать больше</a>
+              </li>
+              <li class="keystone-item">
+                <p><b>Любим математику как никто другой</b></p>
+                <p>Никакого креатива, только математические формулы  для расчета идеальных пропорций.</p>
+                <a class="button" href="studio.html">Узнать больше</a>
+              </li>
+              <li class="keystone-item">
+                <p><b>Только ночь, только хардкор</b></p>
+                <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+                <a class="button" href="studio.html">Узнать больше</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="advantages">
+        <h2>Преимущества</h2>
+        <ul class="advantages-list">
+          <li class="advantage-item">
+            <h3>Веб-сайты</h3>
+            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <a class="button" href="store.html">Заказать</a>
+          </li>
+          <li class="advantage-item">
+            <h3>Приложения</h3>
+            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+            <a class="button" href="store.html">Заказать</a>
+          </li>
+          <li class="advantage-item">
+            <h3>Презентации</h3>
+            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+            <a class="button" href="store.html">Заказать</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="studio">
+        <h2>Студия</h2>
+
+        <div class="studio-about">
+          <p><b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b></p>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <p><b>Выполняем заказы на разработку:</b></p>
+          <ul class="studio-services">
+            <li class="studio-service-item">Веб-сайтов любой сложности</li>
+            <li class="studio-service-item">Мобильных приложений в iOS и Android</li>
+            <li class="studio-service-item">Веб-сайтов любой сложности</li>
+          </ul>
+        </div>
+
+        <div class="studio-statistics">
+          <h3 class="visually-hidden">Наша статистика</h3>
+          <img src="color-logo.svg" width="300" height="150" alt="Цветной логотип студии Nёrds">
+          <table>
+            <caption>C 2004 года любим точность во всем:</caption>
+            <tr>
+              <td>146<span>%</span></td>
+              <td>100<span>%</span></td>
+              <td>50<span>%</span></td>
+            </tr>
+            <tr>
+              <td>Уровень самоотдачи</td>
+              <td>Соблюдение сроков</td>
+              <td>Минимальная предоплата</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="studio-projects">
+          <h3 class="visually-hidden">Наши проекты</h3>
+          <ul>
+            <li><a class="studio-project-item" href="#">HTML Академия</a></li>
+            <li><a class="studio-project-item" href="#">Барбершоп "Бородинский"</a></li>
+            <li><a class="studio-project-item" href="#">Приложение "Пинк"</a></li>
+            <li><a class="studio-project-item" href="#">Мишка</a></li>
+          </ul>
+        </div>
+
+      </section>
+
+    </main>
+
+    <footer class="main-footer">
+
+      <section class="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <div class="contact-address">
+          <h3 class="visually-hidden">Наш адрес</h3>
+          <p><b>Nёrds design studio</b></p>
+          <p>191186, Санкт-Петербург,<br>
+            ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел. +7 (812) 275-75-75</p>
+          <a class="button" href="#">Напишите нам</a>
+        </div>
+        <div class="contact-map">
+          <h3 class="visually-hidden">Мы на карте</h3>
+          <a href="#">Посмотреть</a>
+        </div>
+      </section>
+
+      <section class="social">
+        <h2 class="visually-hidden">Мы в соцсетях</h2>
+        <ul class="footer-social">
+          <li><a class="social-button" href="#">ВКонтакте</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Инстаграм</a></li>
+        </ul>
+        <p><b>Давайте дружить, это выгодно!</b></p>
+        <p>Скидка 10% для друзей из социальных сетей</p>
+      </section>
+    </footer>
+
+    <section class="modal modal-contact">
+      <h2>Напишите нам</h2>
+      <!--Здесь будет форма-->
+      <span class="modal-close">x</span>
+    </section>
+
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как с нами связаться</h2>
+      <!--Здесь будет форма-->
+      <span class="modal-close">x</span>
+    </section>
+
+
+
 
   </body>
 </html>
