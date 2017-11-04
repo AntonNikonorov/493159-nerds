@@ -6,33 +6,125 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
-
-      <a class="main-header-logo" href="index.html">
-        <img src="img/main-logo.svg" width="200" height="50" alt="Логотип студии Нёрдс">
-      </a>
-
+    
+     <header class="main-header">
       <nav class="main-navigation">
+        <a class="main-header-logo" href="index.html">
+          <img src="img/logo.svg" width="160" height="65" alt="Логотип студии Нёрдс">
+        </a>
         <ul class="site-navigation">
           <li><a href="studio.html">Студия</a></li>
           <li><a href="clients.html">Клиенты</a></li>
-          <li><a href="store.html">Магазин</a></li>
+          <li class="site-navigation-active"><a href="catalog.html">Магазин</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
-
-         <ul class="user-navigation">
+        <ul class="user-navigation">
            <li class="basket-link"><a href="basket.html">Корзина</a></li>
         </ul>
       </nav>
-
+      <h1 class="page-title">Магазин готовых шаблонов</h1>
+      
     </header>
 
     <main class="container">
-      <section>
-
+      
+      <section class="sort">
+        <h2 class="visually-hidden">Сортировка</h2>
+        <h3>Сортировать:</h3>
+        <ul class="sort-list">
+          <li class="sort-list-item"><a class="sort-list-active">По цене</a></li>
+          <li class="sort-list-item"><a href="#">По типу</a></li>
+          <li class="sort-list-item"><a href="#">По названию</a></li>
+        </ul>
+        <h3 class="visually-hidden">Порядок сортировки</h3>
+        <ul class="sort-order">
+          <li class="sort-order-item"><a class="visually-hidden sort-order-active">По убыванию</a></li>
+          <li class="sort-order-item"><a class="visually-hidden" href="#">По возрастанию</a></li>
+        </ul>
       </section>
+      
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтр шаблонов</h2>
+        <!--Здесь будет форма-->
+      </section>
+      
+      <section class="catalog">
+        <h2 class="visually-hidden">Список шаблонов</h2>
+        
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <h3>
+              <a href="catalog-item-preview.html">Sedona</a>
+            </h3>
+            <p class="catalog-item-desc">Информационный сайт для туристов</p>
+            <a class="button" href="add-to-basket.html">9 900 руб.</a>
+            <p>
+              <img src="img/sedona-preview.jpg" width="360" height="576" alt="Sedona: Информационный сайт для туристов">
+            </p>
+          </li>
+          <li class="catalog-item">
+            <h3>
+              <a href="catalog-item-preview.html">Pink</a>
+            </h3>
+            <p class="catalog-item-desc">Продуктовый лендинг приложения для iOS и Android</p>
+            <a class="button" href="add-to-basket.html">9 900 руб.</a>
+            <p>
+              <img src="img/pink-preview.jpg" width="360" height="576" alt="Pink: Продуктовый лендинг приложения для iOS и Android">
+            </p>
+          </li>
+          <li class="catalog-item">
+            <h3>
+              <a href="catalog-item-preview.html">Barbershop</a>
+            </h3>
+            <p class="catalog-item-desc">Сайт салона красоты. Для мужчин, да.</p>
+            <a class="button" href="add-to-basket.html">9 900 руб.</a>
+            <p>
+              <img src="img/barbershop-preview.jpg" width="360" height="576" alt="Barbershop: Сайт салона красоты. Для мужчин, да.">
+            </p>
+          </li>
+          <li class="catalog-item">
+            <h3>
+              <a href="catalog-item-preview.html">Mishka</a>
+            </h3>
+            <p class="catalog-item-desc">Интернет-магазин вязаных игрушек</p>
+            <a class="button" href="add-to-basket.html">9 900 руб.</a>
+            <p>
+              <img src="img/mishka-preview.jpg" width="360" height="576" alt="Mishka: Интернет-магазин вязаных игрушек">
+            </p>
+          </li>
+          <li class="catalog-item">
+            <h3>
+              <a href="catalog-item-preview.html">A plus</a>
+            </h3>
+            <p class="catalog-item-desc">Лендинг курсов повышения квалификации</p>
+            <a class="button" href="add-to-basket.html">9 900 руб.</a>
+            <p>
+              <img src="img/aplus-preview.jpg" width="360" height="576" alt="A plus: Лендинг курсов повышения квалификации">
+            </p>
+          </li>
+          <li class="catalog-item">
+            <h3>
+              <a href="catalog-item-preview.html">Кваст</a>
+            </h3>
+            <p class="catalog-item-desc">Промо-сайт производителя крафтового кваса</p>
+            <a class="button" href="add-to-basket.html">9 900 руб.</a>
+            <p>
+              <img src="img/kvast-preview.jpg" width="360" height="576" alt="Кваст: Промо-сайт производителя крафтового кваса">
+            </p>
+          </li>
+        </ul>
+        
+        <p class="visually-hidden">Перейти на страницу:</p>
+        <ul class="pagination-list">
+          <li class="pagination-item pagination-item-current"><a>1</a></li>
+          <li class="pagination-item"><a href="#">2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item"><a href="#">Следующая</a></li>
+        </ul>
+        
+      </section>
+    
     </main>
-
 
     <footer class="main-footer">
 
@@ -46,9 +138,11 @@
           <p>тел. +7 (812) 275-75-75</p>
           <a class="button" href="#">Напишите нам</a>
         </div>
-        <div class="contact-map">
+        <div class="contact-map-pointer">
           <h3 class="visually-hidden">Мы на карте</h3>
-          <a href="#">Посмотреть</a>
+          <a href="#">
+            <span class="visually-hidden">Посмотреть</span>
+          </a>
         </div>
       </section>
 
@@ -62,7 +156,20 @@
         <p><b>Давайте дружить, это выгодно!</b></p>
         <p>Скидка 10% для друзей из социальных сетей</p>
       </section>
+      
     </footer>
+    
+    <section class="modal modal-contact">
+      <h2>Напишите нам</h2>
+      <!--Здесь будет форма-->
+      <span class="modal-close">x</span>
+    </section>
+
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как нас найти</h2>
+      <!--Здесь будет карта-->
+      <span class="modal-close">x</span>
+    </section>
 
   </body>
 </html>
