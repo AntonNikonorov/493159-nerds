@@ -8,7 +8,7 @@
   <body>
 
     <header class="main-header">
-      <nav class="main-navigation">
+      <nav class="main-navigation" aria-label="Главное меню сайта">
         <a class="main-header-logo">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс">
         </a>
@@ -28,13 +28,13 @@
       <section class="keystones">
         <h2 class="visually-hidden">Наши принципы</h2>
         <div class="slider">
-          <input type="radio" id="btn-1" name="keystone-toggle" checked>
-          <input type="radio" id="btn-2" name="keystone-toggle">
-          <input type="radio" id="btn-3" name="keystone-toggle">
+          <input type="radio" id="slider-button-1" name="keystone-toggle" checked>
+          <input type="radio" id="slider-button-2" name="keystone-toggle">
+          <input type="radio" id="slider-button-3" name="keystone-toggle">
           <div class="slider-controls">
-            <label for="btn-1"></label>
-            <label for="btn-2"></label>
-            <label for="btn-3"></label>
+            <label for="slider-button-1"></label>
+            <label for="slider-button-2"></label>
+            <label for="slider-button-3"></label>
           </div>
           <div class="slider-inner">
             <ul class="keystones-list">
@@ -69,7 +69,7 @@
             <img src="img/illustration-1.png" width="300" height="146" alt="Веб-сайты">
             <h3>Веб-сайты</h3>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a class="button" href="store.html">Заказать</a>
+            <a class="button" href="catalog.html">Заказать</a>
           </li>
           <li class="advantage-item">
             <img src="img/illustration-2.png" width="300" height="146" alt="Мобильные приложения">
@@ -122,10 +122,10 @@
         <div class="studio-projects">
           <h3 class="visually-hidden">Наши проекты</h3>
           <ul>
-            <li><a class="studio-project-item" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" width="260" height="180" alt="Логотип HTML Академии">HTML Академия</a></li>
-            <li><a class="studio-project-item" href="#"><img src="img/logo-2.png" width="260" height="180" alt="Логотип Барбершопа Бородинский">Барбершоп "Бородинский"</a></li>
-            <li><a class="studio-project-item" href="#"><img src="img/logo-3.png" width="260" height="180" alt="Логотип приложения Пинк">Приложение "Пинк"</a></li>
-            <li><a class="studio-project-item" href="#"><img src="img/logo-4.png" width="260" height="180" alt="Логотип сайта Мишка">Мишка</a></li>
+            <li><a class="studio-project-item" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="HTML Академия"><img src="img/logo-1.png" width="260" height="180" alt="Логотип HTML Академии">HTML Академия</a></li>
+            <li><a class="studio-project-item" href="#" aria-label="Барбершоп Бородинский"><img src="img/logo-2.png" width="260" height="180" alt="Логотип Барбершопа Бородинский">Барбершоп "Бородинский"</a></li>
+            <li><a class="studio-project-item" href="#" aria-label="Мобильное приложение Пинк"><img src="img/logo-3.png" width="260" height="180" alt="Логотип приложения Пинк">Приложение "Пинк"</a></li>
+            <li><a class="studio-project-item" href="#" aria-label="Интернет-магазин мягких игрушек Мишка"><img src="img/logo-4.png" width="260" height="180" alt="Логотип сайта Мишка">Мишка</a></li>
           </ul>
         </div>
 
@@ -154,9 +154,9 @@
         <section class="social">
           <h2 class="visually-hidden">Мы в соцсетях</h2>
           <ul class="footer-social">
-            <li><a class="social-button" href="#">ВКонтакте</a></li>
-            <li><a class="social-button" href="#">Фейсбук</a></li>
-            <li><a class="social-button" href="#">Инстаграм</a></li>
+            <li><a class="social-button" href="#" aria-label="ВКонтакте">ВКонтакте</a></li>
+            <li><a class="social-button" href="#" aria-label="Фейсбук">Фейсбук</a></li>
+            <li><a class="social-button" href="#" aria-label="Инстаграм">Инстаграм</a></li>
           </ul>
           <p>Давайте дружить, это выгодно!</p>
           <p>Скидка 10% для друзей из социальных сетей</p>
@@ -166,14 +166,30 @@
 
     <section class="modal modal-contact">
       <h2>Напишите нам</h2>
-      <!--Здесь будет форма-->
-      <span class="modal-close">x</span>
+      <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="contact-item">
+          <label for="contact-name">Ваше имя:</label>
+          <input type="text" id="contact-name" name="name" placeholder="Представьтесь, пожалуйста">
+        </p>
+        <p class="contact-item">
+          <label for="contact-email">Ваш e-mail:</label>
+          <input type="email" id="contact-email" name="email" placeholder="Для отправки ответа">
+        </p>
+        <p class="contact-item">
+          <label for="contact-message">Текст письма:</label>
+          <textarea id="contact-message" name="message" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
 
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как нас найти</h2>
-      <!--Здесь будет карта-->
-      <span class="modal-close">x</span>
+        <p>
+          <img src="img/map.jpg" width="1725" height="808" alt="Офис нашей студии по адресу: 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+        </p>
+      <button class="modal-close" type="button">Закрыть карту</button>
     </section>
 
 
