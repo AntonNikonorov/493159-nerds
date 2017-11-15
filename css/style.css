@@ -1,0 +1,404 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Verdana, sans-serif;
+  font-size: 16px;
+  /*line-height: 20px;*/
+  font-weight: 400;
+  color: #283136;
+  /*text-transform: none;*/
+
+  background-color: #ffffff;
+}
+
+h1 {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  /*font-family: inherit;*/
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: #fb5559;
+  border: none;
+
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #e74246;
+}
+
+.button:active {
+  /*background-color: #d7363a;*/
+  box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.1);
+
+}
+
+.main-header {
+  background-color: #eeeeee;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #eeeeee;
+}
+
+.main-header-logo[href]:hover,
+.main-header-logo[href]:focus {
+  opacity: 0.8;
+}
+
+.main-header-logo[href]:active {
+  opacity: 0.3;
+}
+
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: #fb565a;
+}
+
+.site-navigation a:active,
+.user-navigation a:active {
+  color: #000000;
+  opacity: 0.3;
+}
+
+
+
+.keystones-list {
+  list-style: none;
+}
+
+.keystone-item {
+  text-align: left;
+}
+
+.keystone-item p:first-of-type {
+  font-size: 55px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.keystone-item .button {
+
+}
+
+.advantages-list {
+  list-style: none;
+}
+
+.advantage-item h3 {
+  font-size: 24px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.advantage-item p {
+  color: #283136;
+}
+
+.advantage-item:nth-child(2) .button {
+  background-color: #00c973;
+}
+
+.advantage-item:nth-child(2) .button:hover,
+.advantage-item:nth-child(2) .button:focus {
+  background-color: #00bc6b;
+}
+
+.advantage-item:nth-child(2) .button:active {
+  background-color: #00aa61;
+}
+
+.advantage-item:nth-child(3) .button {
+  background-color: #efc749;
+}
+
+.advantage-item:nth-child(3) .button:hover,
+.advantage-item:nth-child(3) .button:focus {
+  background-color: #eab434;
+}
+
+.advantage-item:nth-child(3) .button:active {
+  background-color: #e5a722;
+}
+
+
+.studio-about p:first-of-type {
+  font-size: 45px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.studio-about p:last-of-type {
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.studio-services {
+  list-style: none;
+  color: #283136;
+}
+
+.studio-statistics p:first-of-type {
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.studio-statistics-list {
+  list-style: none;
+}
+
+.studio-statistics-item p:first-of-type {
+  font-size: 45px;
+  font-weight: 700;
+  color: #000000;
+  text-align: left;
+}
+
+.studio-statistics-item sup {
+  font-weight: 500;
+}
+
+.studio-projects ul {
+  list-style: none;
+}
+
+.studio-project-item {
+  opacity: 0.2;
+}
+
+.studio-project-item:hover,
+.studio-project-item:focus {
+  opacity: 1.0;
+}
+
+.studio-project-item:active {
+  opacity: 0.1;
+}
+
+.contacts {
+  color: #666666;
+
+  background-image: url("../img/map.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contact-address {
+  background-color: #ffffff;
+}
+
+.contact-address p:first-of-type {
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.footer-social {
+  list-style: none;
+}
+
+.social p:first-of-type {
+  font-size: 36px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.modal-contact {
+  color: #000000;
+
+  background-color: #ffffff;
+  box-shadow: 0px 20px 40px rgba(0,1,1,0.75);
+}
+
+.modal-contact h2 {
+  font-size: 45px;
+  font-weight: 500;
+}
+
+.contact-item label {
+  font-weight: 700;
+}
+
+.contact-item input,
+.contact-item textarea {
+  font: inherit;
+
+  background-color: #ffffff;
+  border: 2px solid #d7dbdd;
+}
+
+.contact-item input:hover,
+.contact-item textarea:hover {
+  border-color: #b3b8bb;
+}
+
+.contact-item input:focus,
+.contact-item textarea:focus {
+  border-color: #000000;
+  outline: none;
+}
+
+.contact-item input:invalid {
+  border-color: #e74145;
+}
+
+.modal-contact .button {
+  font: inherit;
+}
+
+/* Каталог catalog.html */
+
+.filters ul {
+  list-style: none;
+}
+
+.filter fieldset {
+  /* здесь как-то надо убрать рамку... */
+}
+
+.filter legend {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.filter-option label {
+  color: #283136;
+}
+
+.price label {
+  text-transform: uppercase;
+}
+
+.filter-option label:hover,
+.filter-option label:focus {
+  color: #000000;
+}
+
+.filter-option input[disabled] ~ label {
+  color: rgba(40, 49, 54, 0.3);
+}
+
+.filter-button {
+  font: inherit;
+  font-weight: 500;
+  color: #000000;
+
+  background-color: #ededed;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  background-color: #dfdfdf;
+}
+
+.filter-button:active {
+  background-color: #D5D5D5;
+}
+
+.sort ul {
+  list-style: none;
+}
+
+.sort-list-item a,
+.sort-order-item a {
+  color: rgba(0,0,0,0.3);
+}
+
+.sort-list-item a:hover,
+.sort-list-item a:focus,
+.sort-order-item a:hover,
+.sort-order-item a:focus {
+  color: rgba(0,0,0,0.6);
+}
+
+.sort-list-item a:active,
+.sort-order-item a:active,
+a.sort-list-active,
+a.sort-order-active {
+  color: #000000;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item-description {
+  text-align: center;
+}
+
+.catalog-item-description h3 a {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.catalog-item-description {
+  color: #666666;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item {
+  text-align: center;
+  font-weight: 500;
+}
+
+.pagination-item-current {
+  background-color: transparent;
+
+  border-width: 3px;
+  border-color: #DBDBDB;
+}
+
+.pagination-item a {
+  color: #000000;
+
+  background-color: #EDEDED;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+  background-color: #dfdfdf;
+}
+
+.pagination-item a:active {
+  background-color: #D5D5D5;
+  box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.1);
+}

@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс :: Каталог</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -32,6 +34,22 @@
         <h2 class="visually-hidden">Фильтр шаблонов</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
+            <legend>Стоимость:</legend>
+            <!--здесь должны быть "ползунки"-->
+            <ul>
+              <li class="filter-option price">
+                <label>От
+                  <input class="filter-input filter-input-number" type="number" name="min-price" min="0" max="20000" step="100" value="0" id="filter-min-price">
+                </label>
+              </li>
+              <li class="filter-option price">
+                <label>До
+                  <input class="filter-input filter-input-number" type="number" name="max-price" min="0" max="20000" step="100" value="15000" id="filter-max-price">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
             <legend>Сетка:</legend>
             <ul>
               <li class="filter-option">
@@ -43,7 +61,7 @@
                 <label for="filter-fixed">Фиксированная</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-type" value="flexible" id="filter-flexible">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-type" value="flexible" id="filter-flexible" disabled>
                 <label for="filter-flexible">Резиновая</label>
               </li>
             </ul>
@@ -97,61 +115,73 @@
 
         <ul class="catalog-list">
           <li class="catalog-item">
-            <h3>
-              <a href="catalog-item-preview.html">Sedona</a>
-            </h3>
-            <p class="catalog-item-desc">Информационный сайт для туристов</p>
-            <a class="button" href="add-to-basket.html">9 900 руб.</a>
+            <div class="catalog-item-description">
+              <h3>
+                <a href="catalog-item-preview.html">Sedona</a>
+              </h3>
+              <p class="catalog-item-desc">Информационный сайт для туристов</p>
+              <a class="button" href="add-to-basket.html">9 900 руб.</a>
+            </div>
             <p>
               <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona: Информационный сайт для туристов">
             </p>
           </li>
           <li class="catalog-item">
-            <h3>
-              <a href="catalog-item-preview.html">Pink</a>
-            </h3>
-            <p class="catalog-item-desc">Продуктовый лендинг приложения для iOS и Android</p>
-            <a class="button" href="add-to-basket.html">9 900 руб.</a>
+            <div class="catalog-item-description">
+              <h3>
+                <a href="catalog-item-preview.html">Pink</a>
+              </h3>
+              <p class="catalog-item-desc">Продуктовый лендинг приложения для iOS и Android</p>
+              <a class="button" href="add-to-basket.html">9 900 руб.</a>
+            </div>
             <p>
               <img src="img/img-pink.jpg" width="360" height="576" alt="Pink: Продуктовый лендинг приложения для iOS и Android">
             </p>
           </li>
           <li class="catalog-item">
-            <h3>
-              <a href="catalog-item-preview.html">Barbershop</a>
-            </h3>
-            <p class="catalog-item-desc">Сайт салона красоты. Для мужчин, да.</p>
-            <a class="button" href="add-to-basket.html">9 900 руб.</a>
+            <div class="catalog-item-description">
+              <h3>
+                <a href="catalog-item-preview.html">Barbershop</a>
+              </h3>
+              <p class="catalog-item-desc">Сайт салона красоты. Для мужчин, да.</p>
+              <a class="button" href="add-to-basket.html">9 900 руб.</a>
+            </div>
             <p>
               <img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop: Сайт салона красоты. Для мужчин, да.">
             </p>
           </li>
           <li class="catalog-item">
-            <h3>
-              <a href="catalog-item-preview.html">Mishka</a>
-            </h3>
-            <p class="catalog-item-desc">Интернет-магазин вязаных игрушек</p>
-            <a class="button" href="add-to-basket.html">9 900 руб.</a>
+            <div class="catalog-item-description">
+              <h3>
+                <a href="catalog-item-preview.html">Mishka</a>
+              </h3>
+              <p class="catalog-item-desc">Интернет-магазин вязаных игрушек</p>
+              <a class="button" href="add-to-basket.html">9 900 руб.</a>
+            </div>
             <p>
               <img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka: Интернет-магазин вязаных игрушек">
             </p>
           </li>
           <li class="catalog-item">
-            <h3>
-              <a href="catalog-item-preview.html">A plus</a>
-            </h3>
-            <p class="catalog-item-desc">Лендинг курсов повышения квалификации</p>
-            <a class="button" href="add-to-basket.html">9 900 руб.</a>
+            <div class="catalog-item-description">
+              <h3>
+                <a href="catalog-item-preview.html">A plus</a>
+              </h3>
+              <p class="catalog-item-desc">Лендинг курсов повышения квалификации</p>
+              <a class="button" href="add-to-basket.html">9 900 руб.</a>
+            </div>
             <p>
               <img src="img/img-aplus.jpg" width="360" height="576" alt="A plus: Лендинг курсов повышения квалификации">
             </p>
           </li>
           <li class="catalog-item">
-            <h3>
-              <a href="catalog-item-preview.html">Кваст</a>
-            </h3>
-            <p class="catalog-item-desc">Промо-сайт производителя крафтового кваса</p>
-            <a class="button" href="add-to-basket.html">9 900 руб.</a>
+            <div class="catalog-item-description">
+              <h3>
+                <a href="catalog-item-preview.html">Кваст</a>
+              </h3>
+              <p class="catalog-item-desc">Промо-сайт производителя крафтового кваса</p>
+              <a class="button" href="add-to-basket.html">9 900 руб.</a>
+            </div>
             <p>
               <img src="img/img-kvast.jpg" width="360" height="576" alt="Кваст: Промо-сайт производителя крафтового кваса">
             </p>
