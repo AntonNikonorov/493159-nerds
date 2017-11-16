@@ -4,7 +4,7 @@ body {
 
   font-family: "Roboto", Verdana, sans-serif;
   font-size: 16px;
-  /*line-height: 20px;*/
+  line-height: 24px;
   font-weight: 400;
   color: #283136;
   /*text-transform: none;*/
@@ -12,21 +12,19 @@ body {
   background-color: #ffffff;
 }
 
-h1 {
-  text-align: center;
-}
-
 a {
-  text-decoration: none;
+
 }
 
 .button {
-  /*font-family: inherit;*/
+  font-family: inherit;
   font-size: 16px;
   font-weight: 500;
+  line-height: 18px;
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
 
   background-color: #fb5559;
   border: none;
@@ -40,9 +38,10 @@ a {
 }
 
 .button:active {
-  /*background-color: #d7363a;*/
-  box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.1);
+  color: rgba(255,255,255,0.3);
 
+  background-color: #d7363a;
+  box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.1);
 }
 
 .main-header {
@@ -51,7 +50,7 @@ a {
 
 .main-navigation {
   font-size: 16px;
-  line-height: 20px;
+  line-height: 30px;
   font-weight: 500;
   color: #000000;
   text-transform: uppercase;
@@ -76,6 +75,7 @@ a {
 .site-navigation a,
 .user-navigation a {
   color: #000000;
+  text-decoration: none;
 }
 
 .site-navigation a:hover,
@@ -87,8 +87,7 @@ a {
 
 .site-navigation a:active,
 .user-navigation a:active {
-  color: #000000;
-  opacity: 0.3;
+  color: rgba(0,0,0,0.3);
 }
 
 
@@ -101,14 +100,14 @@ a {
   text-align: left;
 }
 
-.keystone-item p:first-of-type {
-  font-size: 55px;
-  font-weight: 500;
+.keystone-item p {
   color: #000000;
 }
 
-.keystone-item .button {
-
+.keystone-item-title {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
 }
 
 .advantages-list {
@@ -117,11 +116,13 @@ a {
 
 .advantage-item h3 {
   font-size: 24px;
+  line-height: 30px;
   color: #000000;
   text-transform: uppercase;
 }
 
 .advantage-item p {
+  line-height:
   color: #283136;
 }
 
@@ -136,6 +137,7 @@ a {
 
 .advantage-item:nth-child(2) .button:active {
   background-color: #00aa61;
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
 .advantage-item:nth-child(3) .button {
@@ -149,16 +151,17 @@ a {
 
 .advantage-item:nth-child(3) .button:active {
   background-color: #e5a722;
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
-
-.studio-about p:first-of-type {
+.studio-about-title {
   font-size: 45px;
   font-weight: 500;
+  line-height: 45px;
   color: #000000;
 }
 
-.studio-about p:last-of-type {
+.studio-service-title {
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
@@ -169,7 +172,7 @@ a {
   color: #283136;
 }
 
-.studio-statistics p:first-of-type {
+.studio-statistics-title {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
@@ -179,15 +182,20 @@ a {
   list-style: none;
 }
 
-.studio-statistics-item p:first-of-type {
+.studio-statistics-item p {
+  line-height: 18px;
+}
+
+.studio-statistics-index {
   font-size: 45px;
   font-weight: 700;
+  line-height: 10.06px;
   color: #000000;
   text-align: left;
 }
 
 .studio-statistics-item sup {
-  font-weight: 500;
+  /*font-weight: 500;*/
 }
 
 .studio-projects ul {
@@ -195,6 +203,7 @@ a {
 }
 
 .studio-project-item {
+  text-decoration: none;
   opacity: 0.2;
 }
 
@@ -206,6 +215,9 @@ a {
 .studio-project-item:active {
   opacity: 0.1;
 }
+
+/* футер */
+/* контакты */
 
 .contacts {
   color: #666666;
@@ -220,24 +232,55 @@ a {
   background-color: #ffffff;
 }
 
-.contact-address p:first-of-type {
+.contact-address p {
+  line-height: 18px;
+}
+
+.contact-studio-name {
   font-weight: 700;
+  line-height: 30px;
   color: #000000;
   text-transform: uppercase;
 }
+
+/* соцсети */
 
 .footer-social {
   list-style: none;
 }
 
-.social p:first-of-type {
+.social-button {
+  color: #ffffff;
+  text-decoration: none;
+
+  background-color: #e1e1e1;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: #e74246;
+}
+
+.social-button:active {
+  color: rgba(255,255,255,0.3);
+
+  background-color: #d7373b;
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+}
+
+.social-slogan {
   font-size: 36px;
   font-weight: 700;
   color: #000000;
 }
 
+/* модальные окна */
+
+/* "напишите нам" */
+
 .modal-contact {
   color: #000000;
+  line-height: 18px;
 
   background-color: #ffffff;
   box-shadow: 0px 20px 40px rgba(0,1,1,0.75);
@@ -246,6 +289,7 @@ a {
 .modal-contact h2 {
   font-size: 45px;
   font-weight: 500;
+  line-height: 45px;
 }
 
 .contact-item label {
@@ -258,6 +302,16 @@ a {
 
   background-color: #ffffff;
   border: 2px solid #d7dbdd;
+}
+
+.contact-item input::placeholder,
+.contact-item textarea::placeholder {
+  color: #444444;
+  font: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  opacity: 0.5;
 }
 
 .contact-item input:hover,
@@ -281,6 +335,15 @@ a {
 
 /* Каталог catalog.html */
 
+.page-title {
+  color: #000000;
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+  text-align: center;
+}
+
+
 .filters ul {
   list-style: none;
 }
@@ -292,11 +355,13 @@ a {
 .filter legend {
   font-size: 18px;
   font-weight: 700;
+  line-height: 30px;
   text-transform: uppercase;
 }
 
 .filter-option label {
   color: #283136;
+  line-height: 20px;
 }
 
 .price label {
@@ -313,9 +378,9 @@ a {
 }
 
 .filter-button {
+  color: #000000;
   font: inherit;
   font-weight: 500;
-  color: #000000;
 
   background-color: #ededed;
 }
@@ -326,16 +391,32 @@ a {
 }
 
 .filter-button:active {
+  color: rgba(0,0,0,0.3);
+
   background-color: #D5D5D5;
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+}
+
+.sort h3 {
+  color: #000000;
+  font-weight: 700;
+  line-height: 18px;
 }
 
 .sort ul {
   list-style: none;
 }
 
+.sort-list-item {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
 .sort-list-item a,
 .sort-order-item a {
   color: rgba(0,0,0,0.3);
+  text-decoration: none;
 }
 
 .sort-list-item a:hover,
@@ -357,18 +438,19 @@ a.sort-order-active {
 }
 
 .catalog-item-description {
+  color: #666666;
   text-align: center;
+
+  background-color: #eeeeee;
 }
 
 .catalog-item-description h3 a {
+  color: #000000;
   font-size: 18px;
   font-weight: 700;
-  color: #000000;
+  line-height: 30px;
   text-transform: uppercase;
-}
-
-.catalog-item-description {
-  color: #666666;
+  text-decoration: none;
 }
 
 .pagination-list {
@@ -376,8 +458,10 @@ a.sort-order-active {
 }
 
 .pagination-item {
-  text-align: center;
   font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .pagination-item-current {
@@ -389,6 +473,7 @@ a.sort-order-active {
 
 .pagination-item a {
   color: #000000;
+  text-decoration: none;
 
   background-color: #EDEDED;
 }
@@ -399,6 +484,7 @@ a.sort-order-active {
 }
 
 .pagination-item a:active {
+  color: rgba(0,0,0,0.3);
   background-color: #D5D5D5;
   box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.1);
 }
