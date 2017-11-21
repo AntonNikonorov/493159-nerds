@@ -6,66 +6,73 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <!--link href="https://up.htmlacademy.ru/assets/htmlcss/demo/htmlcss18/grids/css/outline.css" rel="stylesheet"-->
   </head>
   <body>
 
     <header class="main-header">
-      <nav class="main-navigation" aria-label="Главное меню сайта">
-        <a class="main-header-logo">
-          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс">
-        </a>
-        <ul class="site-navigation">
-          <li><a href="studio.html">Студия</a></li>
-          <li><a href="clients.html">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-        <ul class="user-navigation">
-           <li class="basket-link"><a href="basket.html">Корзина</a></li>
-        </ul>
-      </nav>
+      <div class="main-navigation-wrapper">
+        <div class="container">
+          <nav class="main-navigation" aria-label="Главное меню сайта">
+            <a class="main-header-logo">
+              <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс">
+            </a>
+              <ul class="site-navigation">
+                <li><a href="studio.html">Студия</a></li>
+                <li><a href="clients.html">Клиенты</a></li>
+                <li><a href="catalog.html">Магазин</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+              </ul>
+              <ul class="user-navigation">
+                <li class="basket-link"><a href="basket.html">Корзина</a></li>
+              </ul>
+          </nav>
+        </div>
+      </div>
 
       <h1 class="visually-hidden">Дизайн-студия "Нёрдс"</h1>
 
-      <section class="keystones">
-        <h2 class="visually-hidden">Наши принципы</h2>
-        <div class="slider">
-          <input type="radio" id="slider-button-1" name="keystone-toggle" checked>
-          <input type="radio" id="slider-button-2" name="keystone-toggle">
-          <input type="radio" id="slider-button-3" name="keystone-toggle">
-          <div class="slider-controls">
-            <label for="slider-button-1"></label>
-            <label for="slider-button-2"></label>
-            <label for="slider-button-3"></label>
+      <div class="container">
+        <section class="keystones">
+          <h2 class="visually-hidden">Наши принципы</h2>
+          <div class="slider">
+            <input type="radio" id="slider-button-1" name="keystone-toggle" checked>
+            <input type="radio" id="slider-button-2" name="keystone-toggle">
+            <input type="radio" id="slider-button-3" name="keystone-toggle">
+            <div class="slider-controls">
+              <label for="slider-button-1"></label>
+              <label for="slider-button-2"></label>
+              <label for="slider-button-3"></label>
+            </div>
+            <div class="slider-inner">
+              <ul class="keystones-list">
+                <li class="keystone-item">
+                  <p class="keystone-item-title">Долго, дорого,  скрупулезно.</p>
+                  <p>Математически выверенный дизайн  для вашего сайта или мобильного приложения.</p>
+                  <a class="button" href="studio.html">Узнать больше</a>
+                </li>
+                <li class="keystone-item">
+                  <p class="keystone-item-title">Любим математику как никто другой</p>
+                  <p>Никакого креатива, только математические формулы  для расчета идеальных пропорций.</p>
+                  <a class="button" href="studio.html">Узнать больше</a>
+                </li>
+                <li class="keystone-item">
+                  <p class="keystone-item-title">Только ночь, только хардкор</p>
+                  <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+                  <a class="button" href="studio.html">Узнать больше</a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="slider-inner">
-            <ul class="keystones-list">
-              <li class="keystone-item">
-                <p class="keystone-item-title">Долго, дорого,  скрупулезно.</p>
-                <p>Математически выверенный дизайн  для вашего сайта или мобильного приложения.</p>
-                <a class="button" href="studio.html">Узнать больше</a>
-              </li>
-              <li class="keystone-item">
-                <p class="keystone-item-title">Любим математику как никто другой</p>
-                <p>Никакого креатива, только математические формулы  для расчета идеальных пропорций.</p>
-                <a class="button" href="studio.html">Узнать больше</a>
-              </li>
-              <li class="keystone-item">
-                <p class="keystone-item-title">Только ночь, только хардкор</p>
-                <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-                <a class="button" href="studio.html">Узнать больше</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
     </header>
 
     <main class="container">
 
       <section class="advantages">
-        <h2>Преимущества</h2>
+        <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages-list">
           <li class="advantage-item">
             <img src="img/illustration-1.png" width="300" height="146" alt="Веб-сайты">
@@ -89,58 +96,62 @@
       </section>
 
       <section class="studio">
-        <h2>Студия</h2>
+        <h2 class="visually-hidden">Студия</h2>
 
-        <div class="studio-about">
-          <h3 class="visually-hidden">Кто мы</h3>
-          <p class="studio-about-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
-          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-          <p class="studio-service-title">Выполняем заказы на разработку:</p>
-          <ul class="studio-services">
-            <li class="studio-service-item">Веб-сайтов любой сложности</li>
-            <li class="studio-service-item">Мобильных приложений в iOS и Android</li>
-            <li class="studio-service-item">Слайдшоу и видео для корпоративных презентаций</li>
-          </ul>
+        <div class="studio-wrapper">
+          <div class="studio-about">
+            <h3 class="visually-hidden">Кто мы</h3>
+            <p class="studio-about-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+            <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+            <p class="studio-service-title">Выполняем заказы на разработку:</p>
+            <ul class="studio-services">
+              <li class="studio-service-item">Веб-сайтов любой сложности</li>
+              <li class="studio-service-item">Мобильных приложений в iOS и Android</li>
+              <li class="studio-service-item">Слайдшоу и видео для корпоративных презентаций</li>
+            </ul>
+          </div>
+
+          <div class="studio-statistics">
+            <h3 class="visually-hidden">Наша статистика</h3>
+            <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Цветной логотип студии Nёrds">
+            <p class="studio-statistics-title">C 2004 года любим точность во всем:</p>
+            <ul class="studio-statistics-list">
+              <li class="studio-statistics-item">
+                <p class="studio-statistics-index">146<sup>%</sup></p>
+                <p>Уровень самоотдачи</p>
+              </li>
+              <li class="studio-statistics-item">
+                <p class="studio-statistics-index">100<sup>%</sup></p>
+                <p>Соблюдение сроков</p>
+              </li>
+              <li class="studio-statistics-item">
+                <p class="studio-statistics-index">50<sup>%</sup></p>
+                <p>Минимальная предоплата</p>
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <div class="studio-statistics">
-          <h3 class="visually-hidden">Наша статистика</h3>
-          <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Цветной логотип студии Nёrds">
-          <p class="studio-statistics-title">C 2004 года любим точность во всем:</p>
-          <ul class="studio-statistics-list">
-            <li class="studio-statistics-item">
-              <p class="studio-statistics-index">146<sup>%</sup></p>
-              <p>Уровень самоотдачи</p>
-            </li>
-            <li class="studio-statistics-item">
-              <p class="studio-statistics-index">100<sup>%</sup></p>
-              <p>Соблюдение сроков</p>
-            </li>
-            <li class="studio-statistics-item">
-              <p class="studio-statistics-index">50<sup>%</sup></p>
-              <p>Минимальная предоплата</p>
-            </li>
-          </ul>
-        </div>
+      </section>
 
-        <div class="studio-projects">
-          <h3 class="visually-hidden">Наши проекты</h3>
-          <ul>
+      <section class="studio-projects">
+        <h2 class="visually-hidden">Наши проекты</h2>
+          <ul class="studio-projects-list">
             <li><a class="studio-project-item" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="HTML Академия"><img src="img/logo-1.png" width="260" height="180" alt="Логотип HTML Академии"></a></li>
             <li><a class="studio-project-item" href="#" aria-label="Барбершоп Бородинский"><img src="img/logo-2.png" width="260" height="180" alt="Логотип Барбершопа Бородинский"></a></li>
             <li><a class="studio-project-item" href="#" aria-label="Мобильное приложение Пинк"><img src="img/logo-3.png" width="260" height="180" alt="Логотип приложения Пинк"></a></li>
             <li><a class="studio-project-item" href="#" aria-label="Интернет-магазин мягких игрушек Мишка"><img src="img/logo-4.png" width="260" height="180" alt="Логотип сайта Мишка"></a></li>
           </ul>
-        </div>
-
-      </section>
+       </section>
 
     </main>
 
     <footer class="main-footer">
+
+      <div class="footer-map-wrapper">
       <div class="container">
 
-        <section class="contacts">
+        <section class="footer-contacts">
           <h2 class="visually-hidden">Контакты</h2>
           <div class="contact-address">
             <h3 class="visually-hidden">Наш адрес</h3>
@@ -151,23 +162,27 @@
             <a class="button" href="#">Напишите нам</a>
           </div>
           <div class="contact-map">
-            <h3 class="visually-hidden">Мы на карте</h3>
-            <a href="#">Посмотреть</a>
+            <h3 class="visually-hidden"><a href="#">Посмотреть на карте</a></h3>
+
           </div>
         </section>
+      </div>
+      </div>
 
-        <section class="social">
-          <h2 class="visually-hidden">Мы в соцсетях</h2>
-          <ul class="footer-social">
+      <div class="container">
+        <section class="footer-social">
+          <ul class="footer-social-buttons">
             <li><a class="social-button" href="#" aria-label="ВКонтакте">ВКонтакте</a></li>
             <li><a class="social-button" href="#" aria-label="Фейсбук">Фейсбук</a></li>
             <li><a class="social-button" href="#" aria-label="Инстаграм">Инстаграм</a></li>
           </ul>
-          <p class="social-slogan">Давайте дружить, это выгодно!</p>
-          <p>Скидка 10% для друзей из социальных сетей</p>
+          <div class="footer-slogan">
+            <p class="social-slogan">Давайте дружить, это выгодно!</p>
+            <p>Скидка 10% для друзей из социальных сетей</p>
+          </div>
         </section>
-
       </div>
+
     </footer>
 
     <section class="modal modal-contact">

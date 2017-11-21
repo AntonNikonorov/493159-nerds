@@ -219,7 +219,7 @@ a {
 /* футер */
 /* контакты */
 
-.contacts {
+.footer-contacts {
   color: #666666;
 
   background-image: url("../img/map.jpg");
@@ -245,7 +245,7 @@ a {
 
 /* соцсети */
 
-.footer-social {
+.footer-social-buttons {
   list-style: none;
 }
 
@@ -487,4 +487,202 @@ a.sort-order-active {
   color: rgba(0,0,0,0.3);
   background-color: #D5D5D5;
   box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+/* ----- Сеточные стили ----- */
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main-header {
+  padding: 0;
+  padding-top: 49px;
+  margin: 0;
+  margin-bottom: 80px;
+  background-color: #eeeeee;
+}
+
+.main-navigation-wrapper {
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+.main-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main-header-logo {
+  width: 160px;
+  height: 65px;
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 440px;
+
+  list-style: none;
+}
+
+.user-navigation {
+  margin: 0;
+  padding: 0;
+  width: 160px;
+
+  list-style: none;
+}
+
+.keystones {
+
+}
+
+.keystones-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.advantages {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 78px;
+
+}
+
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  padding-right: 60px;
+
+  list-style: none;
+}
+
+.advantage-item {
+  margin: 0;
+  padding: 0;
+  margin-right: 0px;
+  width: 300px;
+}
+
+.studio {
+  margin: 0;
+  padding: 0;
+  padding-top: 38px;
+
+  border-top: 2px solid #eeeeee;
+}
+
+.studio-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 79px;
+  padding: 0;
+  width: 100%;
+}
+
+.studio-about {
+  margin: 0;
+  padding: 0;
+  width: 680px;
+}
+
+.studio-statistics {
+  margin: 0;
+  padding: 0;
+  width: 360px;
+
+}
+
+.studio-statistics-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.studio-statistics-item {
+  width: 120px;
+}
+
+.studio-projects {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
+}
+
+.studio-projects-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  list-style: none;
+}
+
+.studio-project-item {
+  margin: 0;
+  padding: 0;
+  width: 260px;
+}
+
+.main-footer {
+  margin-top: 80px;
+}
+
+.footer-map-wrapper {
+  width: 100%;
+}
+
+.footer-contacts {
+  display: flex;
+  margin: 0;
+}
+
+.contact-address {
+  margin: 54px 0 auto;
+  padding: 50px;
+  width: 319px;
+}
+
+.contact-map {
+  margin: 89px auto auto 261px;
+  width: 231px;
+}
+
+.footer-social {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-social-buttons {
+  width: 260px;
+  margin: auto 0;
+  padding: 0;
+}
+
+.footer-slogan {
+  margin: auto 0;
+  padding: 0;
+  padding-left: 140px;
 }
