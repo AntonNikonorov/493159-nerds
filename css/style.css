@@ -16,6 +16,14 @@ a {
 
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 .button {
   font-family: inherit;
   font-size: 16px;
@@ -219,13 +227,17 @@ a {
 /* футер */
 /* контакты */
 
-.footer-contacts {
+.footer-map-wrapper {
   color: #666666;
 
   background-image: url("../img/map.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.footer-contacts {
+
 }
 
 .contact-address {
@@ -275,6 +287,11 @@ a {
 }
 
 /* модальные окна */
+
+.modal {
+  /* временно для отладки */
+  display: none;
+}
 
 /* "напишите нам" */
 
@@ -659,7 +676,7 @@ a.sort-order-active {
 }
 
 .contact-address {
-  margin: 54px 0 auto;
+  margin: 54px 0;
   padding: 50px;
   width: 319px;
 }
@@ -676,6 +693,8 @@ a.sort-order-active {
 }
 
 .footer-social-buttons {
+  display: flex;
+  justify-content: space-between;
   width: 260px;
   margin: auto 0;
   padding: 0;
@@ -685,4 +704,99 @@ a.sort-order-active {
   margin: auto 0;
   padding: 0;
   padding-left: 140px;
+}
+
+/* каталог  */
+
+.inner-page {
+}
+
+.inner-page .main-header {
+  margin-bottom: 60px;
+}
+
+.page-title {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 112px;
+}
+
+.catalog-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filters {
+  width: 260px;
+}
+
+.catalog-column-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.sort {
+  display: flex;
+  margin-bottom: 58px;
+}
+
+.sort h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.sort-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.sort-order {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.catalog {
+  width: 760px;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.catalog-item {
+  width: 360px;
+  margin-right: 40px;
+  margin-bottom: 33px;
+}
+
+.catalog-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.pagination-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.pagination-item {
+  padding-right: 11px;
+}
+
+.inner-page .main-footer {
+  margin-top: 60px;
 }
