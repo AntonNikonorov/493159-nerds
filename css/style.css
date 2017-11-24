@@ -25,6 +25,9 @@ a {
 }
 
 .button {
+  display: inline-block;
+  padding: 17px 40px;
+
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
@@ -36,6 +39,7 @@ a {
 
   background-color: #fb5559;
   border: none;
+  border-radius: 4px;
 
   cursor: pointer;
 }
@@ -127,11 +131,15 @@ a {
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
+
+  margin: 18px 0 17px;
 }
 
 .advantage-item p {
-  line-height:
+  line-height: 24px;
   color: #283136;
+
+  margin: 0 20px 0 0;
 }
 
 .advantage-item:nth-child(2) .button {
@@ -167,23 +175,37 @@ a {
   font-weight: 500;
   line-height: 45px;
   color: #000000;
+
+  margin: 34px 10px 32px 0;
 }
 
 .studio-service-title {
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
+
+  margin: 40px 0 25px;
 }
 
 .studio-services {
   list-style: none;
   color: #283136;
+
+  margin: 0px;
+  padding-left: 35px;
+}
+
+.studio-service-item {
+  margin-bottom: 24px;
+
 }
 
 .studio-statistics-title {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+
+  margin: 30px 0 53px;
 }
 
 .studio-statistics-list {
@@ -192,22 +214,29 @@ a {
 
 .studio-statistics-item p {
   line-height: 18px;
+  margin: 0 0 33px;
 }
 
 .studio-statistics-index {
   font-size: 45px;
   font-weight: 700;
-  line-height: 10.06px;
+ /* line-height: 10.06px; */
   color: #000000;
   text-align: left;
 }
 
 .studio-statistics-item sup {
   /*font-weight: 500;*/
+  font-size: 55%;
+  top: 0;
 }
 
-.studio-projects ul {
+.studio-projects-list {
   list-style: none;
+}
+
+.studio-projects-list li {
+  line-height: 0;
 }
 
 .studio-project-item {
@@ -366,6 +395,7 @@ a {
 }
 
 .filter fieldset {
+  border: none;
   /* здесь как-то надо убрать рамку... */
 }
 
@@ -570,8 +600,7 @@ a.sort-order-active {
 .advantages {
   margin: 0;
   padding: 0;
-  margin-bottom: 78px;
-
+  margin-bottom: 80px;
 }
 
 .advantages-list {
@@ -594,7 +623,7 @@ a.sort-order-active {
 .studio {
   margin: 0;
   padding: 0;
-  padding-top: 38px;
+  padding-top: 40px;
 
   border-top: 2px solid #eeeeee;
 }
