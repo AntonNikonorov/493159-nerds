@@ -906,7 +906,8 @@ a.sort-order-active {
 }
 
 .catalog-item-description {
-  display: none;
+  /*display: none;*/
+  z-index: -1;
 
   position: absolute;
   bottom: 0px;
@@ -1319,7 +1320,8 @@ a.sort-order-active {
 }
 
 .catalog-item:hover .catalog-item-description {
-  display: block;
+  /*display: block;*/
+  z-index: 0;
 }
 
 
