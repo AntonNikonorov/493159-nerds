@@ -552,8 +552,47 @@ a {
 
 /* Всплывающие формы */
 
+@keyframes modal-bounce {
+  0% {
+    transform: translateX(2000px);
+  }
+
+  70% {
+    transform: translateX(-30px);
+  }
+
+  90% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes modal-shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal {
-  /* временно для отладки */
   display: none;
 
   position: fixed;
@@ -565,6 +604,12 @@ a {
 
 .modal-show {
   display: block;
+  
+  animation: modal-bounce 0.6s;
+}
+
+.modal-error {
+  animation: modal-shake 0.6s;
 }
 
 /* "напишите нам" */
@@ -700,7 +745,9 @@ a {
   outline: none;
 }
 
-.contact-item input:invalid {
+.contact-item input:invalid,
+.modal-error .field-empty,
+.modal-error textarea:empty {
   border-color: #e74145;
 }
 
@@ -716,6 +763,7 @@ a {
   right: 90px;
   width: 21px;
   height: 21px;
+  z-index: 100;
   font-size: 0;
   background-image: url("../img/close-cross.svg");
   background-repeat: no-repeat;
@@ -754,10 +802,18 @@ a {
 
 .map-interactive {
   position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+  
+  border: none;
   /* display: none; */
 }
 
 .map-static {
+  position: relative;
+  z-index: 1;
+  
   margin: 0;
 }
 
@@ -1556,10 +1612,10 @@ a.sort-order-active {
 }
 
 .catalog-item-image {
-  margin: -1px;
+  margin: 0;
   padding: 0;
   line-height: 0;
-  border: 1px solid rgba(0, 1, 1, 0.1);
+  /* border: 1px solid rgba(0, 1, 1, 0.1); */
 }
 
 .catalog-item-image img {
