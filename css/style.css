@@ -455,6 +455,8 @@ body {
 /* контакты */
 
 .footer-map-wrapper {
+  position: relative;
+
   color: #666666;
 
   background-image: url("../img/map.jpg");
@@ -469,6 +471,7 @@ body {
 
 .contact-address {
   background-color: #ffffff;
+  z-index: 2;
 }
 
 .contact-address p {
@@ -487,11 +490,24 @@ body {
 .contact-address .button {
   margin-top: 21px;
   width: 100%;
+  pointer-events: all;
 }
 
 .contact-map h3 {
   margin-top: 90px;
   margin-left: 360px;
+}
+
+.interactive-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.interactive-map {
+    border: none;
 }
 
 /* соцсети */
@@ -674,6 +690,7 @@ body {
   min-height: 440px;
   padding: 67px 100px 84px;
   margin-left: -480px;
+  z-index: 100;
   color: #000000;
   line-height: 18px;
   background-color: #ffffff;
@@ -853,7 +870,7 @@ body {
           box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
 }
 
-.map-interactive {
+.map-interactive! { /* удалить */
   position: absolute;
   top: 10px;
   left: 10px;
@@ -1305,6 +1322,8 @@ a.sort-order-active {
   background-color: transparent;
 
   border: 3px solid #DBDBDB;
+
+  pointer-events: none;
 }
 
 .pagination-item .current-page:hover,
@@ -1518,6 +1537,10 @@ a.sort-order-active {
   width: 100%;
 }
 
+.footer-map-wrapper .container {
+  pointer-events: none;
+}
+
 .footer-contacts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1534,6 +1557,8 @@ a.sort-order-active {
 .contact-map {
   /*margin: 89px auto auto 261px;
   width: 231px;*/
+  z-index: 2;
+  pointer-events: none;
 }
 
 .footer-social {
