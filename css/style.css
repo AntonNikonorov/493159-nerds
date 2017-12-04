@@ -13,10 +13,6 @@ body {
   background-color: #ffffff;
 }
 
-a {
-
-}
-
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -552,28 +548,55 @@ a {
 
 /* Всплывающие формы */
 
-@keyframes modal-bounce {
+@-webkit-keyframes modal-bounce {
   0% {
-    transform: translateX(2000px);
+    -webkit-transform: translateX(2000px);
+            transform: translateX(2000px);
   }
 
   70% {
-    transform: translateX(-30px);
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px);
   }
 
   90% {
-    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
 
   100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
-@keyframes modal-shake {
+@keyframes modal-bounce {
+  0% {
+    -webkit-transform: translateX(2000px);
+            transform: translateX(2000px);
+  }
+
+  70% {
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px);
+  }
+
+  90% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes modal-shake {
   0%,
   100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 
   10%,
@@ -581,14 +604,41 @@ a {
   50%,
   70%,
   90% {
-    transform: translateX(-10px);
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
+@keyframes modal-shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
 }
 
@@ -604,12 +654,15 @@ a {
 
 .modal-show {
   display: block;
-  
-  animation: modal-bounce 0.6s;
+
+  -webkit-animation: modal-bounce 0.6s;
+
+          animation: modal-bounce 0.6s;
 }
 
 .modal-error {
-  animation: modal-shake 0.6s;
+  -webkit-animation: modal-shake 0.6s;
+          animation: modal-shake 0.6s;
 }
 
 /* "напишите нам" */
@@ -805,7 +858,7 @@ a {
   top: 10px;
   left: 10px;
   z-index: 2;
-  
+
   border: none;
   /* display: none; */
 }
@@ -813,7 +866,7 @@ a {
 .map-static {
   position: relative;
   z-index: 1;
-  
+
   margin: 0;
 }
 
