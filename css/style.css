@@ -1557,7 +1557,6 @@ a.sort-order-active {
 .contact-map {
   /*margin: 89px auto auto 261px;
   width: 231px;*/
-  z-index: 2;
   pointer-events: none;
 }
 
