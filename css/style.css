@@ -466,7 +466,6 @@ body {
 }
 
 .footer-contacts {
-
 }
 
 .contact-address {
@@ -478,9 +477,10 @@ body {
   line-height: 18px;
 }
 
-.contact-studio-name {
-  margin: 6px 0 30px;
+.contact-address .contact-studio-name {
+  margin: 0 0 22px;
 
+  font-size: 18px;
   font-weight: 700;
   line-height: 30px;
   color: #000000;
@@ -488,7 +488,7 @@ body {
 }
 
 .contact-address .button {
-  margin-top: 21px;
+  margin-top: 23px;
   width: 100%;
   pointer-events: all;
 }
@@ -852,7 +852,7 @@ body {
   opacity: 0.1;
 }
 
-/* карта */
+/* карта (модальная) */
 
 .modal-map {
   top: 10px;
@@ -870,14 +870,13 @@ body {
           box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
 }
 
-.map-interactive! { /* удалить */
+.map-interactive {
   position: absolute;
   top: 10px;
   left: 10px;
   z-index: 2;
 
   border: none;
-  /* display: none; */
 }
 
 .map-static {
@@ -886,28 +885,6 @@ body {
 
   margin: 0;
 }
-
-/*
-.modal-close::before,
-.modal-close::after {
-  content: "";
-  position: absolute;
-  top: 78px;
-  right: 90px;
-  width: 25px;
-  height: 4px;
-  background-color: #fb565a;
-  opacity: 0.3;
-}
-
-.modal-close::before {
-  transform: rotate(-45deg);
-}
-
-.modal-close::after {
-  transform: rotate(45deg);
-}
-*/
 
 /* Каталог catalog.html */
 

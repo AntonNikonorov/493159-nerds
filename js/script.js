@@ -40,7 +40,7 @@ contactLink.addEventListener("click", function(evt){
 });
 
 contactClose.addEventListener("click", function(evt){
-  evt.preventDefault();  
+  evt.preventDefault();
   contactPopup.classList.remove("modal-show");
   contactPopup.classList.remove("modal-error");
   contactName.classList.remove("field-empty");
@@ -77,27 +77,5 @@ window.addEventListener("keydown", function(evt){
     }
     contactName.classList.remove("field-empty");
     contactMail.classList.remove("field-empty");
-  }
-});
-
-var mapLink = document.querySelector(".map-button")
-var mapPopup = document.querySelector(".modal-map");
-var mapClose = mapPopup.querySelector(".modal-close")
-
-mapLink.addEventListener("click", function(evt){
-  evt.preventDefault();
-  mapPopup.classList.add("modal-show");
-});
-
-mapClose.addEventListener("click", function(evt){
-  evt.preventDefault();
-  mapPopup.classList.remove("modal-show");
-});
-
-window.addEventListener("keydown", function(evt){
-  if (evt.code === 27) {
-    if (contactPopup.classList.contains("modal-show")) {
-      contactPopup.classList.remove("modal-show");
-    }
   }
 });
